@@ -1,3 +1,41 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/MMj2nZMu)
 # Rsearch and Reflection Journal
-Research and Reflection Journal for DGL 104 course
+## WEEK 8 - FUNCTIONAL USER REQUIREMENTS
+
+User stories allow developers to understand the needs of users, even if they are not the final recipients of the software. A user story is a brief statement from the user's perspective, beginning with "As a user..." and detailing what the user expects from the software in a specific situation. They enable developers to put themselves in the users' shoes and define clear specifications for software features, especially when complemented by user feedback through focus groups.
+
+User stories guide the definition of functional requirements, which are precise technical specifications of the application's features. These requirements serve as the basis for developing 
+a complete technical specification.
+
+### RESEARCH A NEW LANGUAGE - Lua
+
+The Lua programming language is especially used in the video game industry and many video games use Lua as a scripting language. Lua is often used in game engines to keep game settings and characters separate, thus making the game engine more flexible and allowing different games to use the same engine.
+Another major application area for Lua is network and systems programming. Lua is used to configure and automate programs. Well-known examples are VLC Media Player or Adobe Photoshop Lightroom. In terms of networks, network analyzers such as Wireshark use Lua functions.
+
+### WRITE A USER STORY
+
+Youtube App
+
+User Stories:
+
+- As a user, I can search for videos using a search bar.
+- As a user, I can subscribe to channels to receive updates on new content.
+- As a user, I can like or dislike videos to express my opinion.
+- As a user, I can create and manage playlists to organize my favorite videos.
+- As a user, I can comment on videos to share my thoughts with others.
+
+Acceptance Criteria:
+
+- A ‘Subscribe’ button is visible on each channel page.
+- Clicking the ‘Subscribe’ button adds the channel to the user's subscription list.
+- The ‘Subscribe’ button changes to ‘Subscribed’ after clicking.
+- New videos from subscribed channels appear in the user's subscription feed.
+
+### CHOOSE A LANGUAGE FOR YOUR APP DEVELOPMENT PROJECT CODE
+
+We decided to use Python along with a framework, which in this case will be Django, because I personally have experience working with Python and databases, it is easy for me to connect both parts Front With Back.  Our app will be about managing routines that users do at the gym and also managing issues related to gym management.
+
+### STAR GITHUB TOPICS AND REPOSITORIES OF INTEREST
+
+I found it very interesting that there are sections where there are projects that are too big and some that are popular, although I don't really know how you can contribute to them, I find it interesting to understand how GitHub works, how these projects work and how people contribute to them, Boostrap is one of the most popular frameworks and I found it in the collections section.
+
+![image](https://github.com/user-attachments/assets/78405b4c-d7f6-4c6c-b11f-f15d81f3fd07)
