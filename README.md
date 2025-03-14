@@ -39,3 +39,19 @@ We decided to use Python along with a framework, which in this case will be Djan
 I found it very interesting that there are sections where there are projects that are too big and some that are popular, although I don't really know how you can contribute to them, I find it interesting to understand how GitHub works, how these projects work and how people contribute to them, Boostrap is one of the most popular frameworks and I found it in the collections section.
 
 ![image](https://github.com/user-attachments/assets/78405b4c-d7f6-4c6c-b11f-f15d81f3fd07)
+
+
+### FOLLOW-UP QUESTIONS AND REFLECTIONS
+
+What is one interesting thing that you’ve learned from researching about programming languages and from reading other students’ posting about programming languages in response to the first activity?
+- I didn't know about Lua and I think that language is the best option for add or mod a videogame without touching the game logic in the direct code, I really like videogames and for me could be a great way to learn something different related with videogames and coding. 
+
+What other programming languages might you consider to work with for DGL 104? What are your second choices, and why?
+- Could be JavaScript because I heard from some students that they know little bit of java and javascript and could be a great backup just in case.
+
+What did you find most interesting when examining repositories on GitHub? Is there anything that surprised you, or that you didn’t expect? What similarities are there across some of the repositories you’ve starred?
+- I didn't expect that, for example, Bootstrap was on GitHub, although I'm not very sure what can be done with it, it's a good idea to explore it at the project and code level.
+
+
+-----------
+
