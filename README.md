@@ -55,3 +55,145 @@ What did you find most interesting when examining repositories on GitHub? Is the
 
 -----------
 
+## WEEK 9 - DESIGN PATTERNS
+
+### RESEARCH ON DESIGN PATTERNS
+
+__SINGLETON IN JAVA__
+- Ensure that a class has only one instance throughout the lifecycle of the application.
+- Provide a global point of access to that instance.
+- Control resource usage by preventing unnecessary object creation.
+
+__Real-World Applications__
+- Database connections: Maintain a single connection to the database to avoid conflicts and save resources.
+- Logging: Ensure that all logs are handled by a single logging object.
+- Configuration Management: Store configuration settings in a single object to prevent inconsistency.
+- Thread Pools: Manage resources efficiently by using a single thread pool manager.
+
+
+**Example (Logging System)**
+
+Imagine you want to log messages to a file. Using a Singleton ensures that the log file is managed by a single instance, preventing conflicts from multiple objects trying to write at once:
+
+```java
+public class Logger {
+    private static Logger instance;
+
+    private Logger() {}
+
+    public static Logger getInstance() {
+        if (instance == null) {
+            instance = new Logger();
+        }
+        return instance;
+    }
+
+    public void log(String message) {
+        System.out.println("Log: " + message);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Logger logger = Logger.getInstance();
+        logger.log("Application started");
+    }
+}
+```
+
+__OBSERVER IN JAVA__
+- Establish a one-to-many relationship between objects.
+- When the state of one object (subject) changes, all dependent objects (observers) are automatically notified and updated.
+- Promotes loose coupling between objects.
+
+__Real-World Applications__
+- Event handling in GUI frameworks – Button clicks, text input changes, etc.
+- Stock Market systems – Notify investors when stock prices change.
+- Social Media notifications – Notify followers when a user posts a new update.
+- Newsletters – When a new article is published, subscribers are notified.
+
+**Example (Stock Price Tracker)**
+
+A stock market app where multiple users (observers) are notified when the stock price changes
+
+`Subject (Stock)`
+
+```java
+import java.util.ArrayList;
+import java.util.List;
+
+class Stock {
+    private List<Observer> observers = new ArrayList<>();
+    private double price;
+
+    public void attach(Observer observer) {
+        observers.add(observer);
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+        notifyObservers();
+    }
+
+    private void notifyObservers() {
+        for (Observer observer : observers) {
+            observer.update(price);
+        }
+    }
+}
+```
+
+`Observer (Investor)`
+
+```java
+interface Observer {
+    void update(double price);
+}
+
+class Investor implements Observer {
+    private String name;
+
+    public Investor(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public void update(double price) {
+        System.out.println(name + " notified: New stock price = $" + price);
+    }
+}
+```
+
+`Usage`
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        Stock stock = new Stock();
+
+        Investor investor1 = new Investor("Investor 1");
+        Investor investor2 = new Investor("Investor 2");
+
+        stock.attach(investor1);
+        stock.attach(investor2);
+
+        stock.setPrice(100.50);
+        stock.setPrice(105.75);
+    }
+}
+```
+
+### SUMMARY “HOW TO CONTRIBUTE TO OPEN SOURCE”
+
+The article explains in detail how to contribute to open source projects and why it can be beneficial for you and the community. First, clarify what open source is (software that anyone can view, modify, and distribute) and that contributing doesn't just involve writing code, but also improving documentation, fixing bugs, translating, helping others, and designing interfaces.
+
+It also suggests ways to get started: choosing projects that interest you, reviewing the documentation and open issues, and exploring how work is organized within the project. It recommends starting with small tasks, such as fixing minor bugs or improving documentation, to gain experience and familiarize yourself with the community.
+
+Finally, the article explains best practices for contributing effectively. It's important to follow project rules, communicate respectfully, propose clear changes, and openly accept feedback. It also mentions that contributing to open source is an opportunity to improve your technical skills, expand your professional network, and be part of a global community.
+
+### SUMMARY “HOW TO CONTRIBUTE TO OPEN SOURCE”
+
+I think the first step before contributing would be to understand the function of the project, that is, what its purpose is, by reading the documentation and understanding a little about how it is built. In this way, we can say that at a certain point we will do a code review to see if we can contribute something.
+
+In this case, I saw one called "ERPNext."
+It's an open-source enterprise resource planning (ERP) system that allows companies to manage and automate key processes such as sales, purchasing, inventory, accounting, human resources, production, and more. It's built on the Frappe framework (also open-source), allowing for high customization and ease of development.
