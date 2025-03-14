@@ -1,4 +1,4 @@
-# Rsearch and Reflection Journal
+# Research and Reflection Journal
 ## WEEK 8 - FUNCTIONAL USER REQUIREMENTS
 
 User stories allow developers to understand the needs of users, even if they are not the final recipients of the software. A user story is a brief statement from the user's perspective, beginning with "As a user..." and detailing what the user expects from the software in a specific situation. They enable developers to put themselves in the users' shoes and define clear specifications for software features, especially when complemented by user feedback through focus groups.
