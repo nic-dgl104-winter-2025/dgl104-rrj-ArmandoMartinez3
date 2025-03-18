@@ -191,9 +191,27 @@ It also suggests ways to get started: choosing projects that interest you, revie
 
 Finally, the article explains best practices for contributing effectively. It's important to follow project rules, communicate respectfully, propose clear changes, and openly accept feedback. It also mentions that contributing to open source is an opportunity to improve your technical skills, expand your professional network, and be part of a global community.
 
-### SUMMARY “HOW TO CONTRIBUTE TO OPEN SOURCE”
+### WRITE A SUMMARY ON SLACK
 
 I think the first step before contributing would be to understand the function of the project, that is, what its purpose is, by reading the documentation and understanding a little about how it is built. In this way, we can say that at a certain point we will do a code review to see if we can contribute something.
 
 In this case, I saw one called "ERPNext."
 It's an open-source enterprise resource planning (ERP) system that allows companies to manage and automate key processes such as sales, purchasing, inventory, accounting, human resources, production, and more. It's built on the Frappe framework (also open-source), allowing for high customization and ease of development.
+
+In this case you can contribute to one of the issues
+
+Issue #26136 mentions a 404 error in the `get_item_tax_info` method.
+
+This could be caused by:
+
+- An error in the method path
+- A permissions or authentication issue
+- Incorrect environment configuration
+
+### FOLLOW-UP QUESTIONS AND REFLECTIONS
+
+Is the programming language that you chose last week still the right choice? Should you consider alternatives?
+- Yes I think those choices are the best for developing the kind of app that is required, in this way I can work in backend and my team in front end
+
+What is your plan to develop your application? Have you started creating a tentative timeline to meet the deadline?
+- We are going to design as a first step the mockups to know all the screens that our app is going to have then to develop in html and css all the required pages and finally conect them to the backend
